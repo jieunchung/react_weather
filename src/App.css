@@ -1,13 +1,4 @@
 .container {
-  max-width: 600px;
-}
-.card {
-  text-align: center;
-  font-family: "Dosis", sans-serif;
-}
-
-ul li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  max-width: 650px;
+  margin: 50px auto;
 }

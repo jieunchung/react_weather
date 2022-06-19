@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
-import "./App.css";
+import "./Search.css";
+import Icon from "./Icon.js";
 
 export default function Search() {
   const [city, setCity] = useState("");
@@ -34,13 +35,26 @@ export default function Search() {
   }
 
   let form = (
-    <form onSubmit={searchValue}>
-      <input
-        type="search"
-        placeholder="Enter a city..."
-        onChange={updateValue}
-      />
-      <input type="submit" value="Search" />
+    <form className="form-inline" onSubmit={searchValue}>
+      <div className="form-group mx-sm-3 mb-2">
+        <div className="row">
+          <div className="col-9">
+            <input
+              className="form-control"
+              type="search"
+              placeholder="Enter a city..."
+              onChange={updateValue}
+            />
+          </div>
+          <div className="col-3">
+            <input
+              className="btn btn-primary mx-sm-3"
+              type="submit"
+              value="Search"
+            />
+          </div>
+        </div>
+      </div>
     </form>
   );
 
@@ -49,8 +63,23 @@ export default function Search() {
       <div>
         {form}
         <div className="row">
-          <div className="col-8"></div>
-          <div className="col-4"></div>
+          <div className="col-8">
+            <span className="icon">
+              <Icon />
+            </span>
+            <span className="main-temp">{Math.round(weather.temp)}</span>
+            <span className="unit"> °C</span>
+
+            <ul className="main-details">
+              <li>Humidity: {weather.humidity}%</li>
+              <li>Wind: {weather.wind}m/s</li>
+              <li>Realfeel: {Math.round(weather.feelsLike)}°C</li>
+            </ul>
+          </div>
+          <div className="col-4 city-details">
+            {weather.name}
+            <div className="main-description">{weather.description}</div>
+          </div>
         </div>
       </div>
     );

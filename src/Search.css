@@ -1,0 +1,49 @@
+.city-details {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  position: relative;
+  top: 15px;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.main-description {
+  font-size: 13px;
+  text-align: left;
+  text-transform: capitalize;
+  line-height: 18px;
+}
+
+.main-temp {
+  font-size: 55px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.main-details {
+  font-size: 13px;
+  text-align: left;
+  line-height: 15px;
+}
+
+.row {
+  margin: 40px auto;
+}
+
+.unit {
+  position: relative;
+  top: -25px;
+  left: -8px;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}

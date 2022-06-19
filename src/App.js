@@ -7,7 +7,6 @@ export default function App() {
     <div className="container">
       <div className="card">
         <div className="card-body">
-          <h1>React Weather App</h1>
           <Search />
         </div>
       </div>
