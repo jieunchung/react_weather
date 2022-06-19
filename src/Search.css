@@ -1,10 +1,22 @@
 .city-details {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   line-height: 20px;
-  text-align: left;
+  text-align: right;
   position: relative;
   top: 15px;
+}
+
+.form-input {
+  padding: 10px 20px;
+}
+
+.form-btn,
+.form-btn:hover {
+  padding: 10px 20px;
+  background-color: #118a7e;
+  border-color: #118a7e;
+  color: #fff;
 }
 
 .icon {
@@ -13,7 +25,7 @@
 
 .main-description {
   font-size: 13px;
-  text-align: left;
+  text-align: right;
   text-transform: capitalize;
   line-height: 18px;
 }
@@ -22,6 +34,7 @@
   font-size: 55px;
   font-weight: 700;
   margin-left: 5px;
+  text-align: left;
 }
 
 .main-details {

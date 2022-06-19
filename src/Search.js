@@ -38,17 +38,17 @@ export default function Search() {
     <form className="form-inline" onSubmit={searchValue}>
       <div className="form-group mx-sm-3 mb-2">
         <div className="row">
-          <div className="col-9">
+          <div className="col-8">
             <input
-              className="form-control"
+              className="form-control form-input"
               type="search"
               placeholder="Enter a city..."
               onChange={updateValue}
             />
           </div>
-          <div className="col-3">
+          <div className="col-4">
             <input
-              className="btn btn-primary mx-sm-3"
+              className="btn mx-sm-3 w-100 form-btn"
               type="submit"
               value="Search"
             />
@@ -63,7 +63,7 @@ export default function Search() {
       <div>
         {form}
         <div className="row">
-          <div className="col-8">
+          <div className="col-6">
             <span className="icon">
               <Icon />
             </span>
@@ -76,7 +76,7 @@ export default function Search() {
               <li>Realfeel: {Math.round(weather.feelsLike)}°C</li>
             </ul>
           </div>
-          <div className="col-4 city-details">
+          <div className="col-6 city-details">
             {weather.name}
             <div className="main-description">{weather.description}</div>
           </div>
