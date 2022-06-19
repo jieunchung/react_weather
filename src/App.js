@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
 import Search from "./Search";
-import axios from "axios";
 
 export default function App() {
   return (

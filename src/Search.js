@@ -4,9 +4,22 @@ import "./App.css";
 
 export default function Search() {
   const [city, setCity] = useState("");
+  const [loaded, setLoaded] = useState(false);
+  const [weather, setWeather] = useState({});
 
   function getWeather(response) {
-    return alert(`it is currently ${response.data.main.temp} in ${city}`);
+    setLoaded(true);
+    return setWeather({
+      name: response.data.name,
+      temp: response.data.main.temp,
+      feelsLike: response.data.main.feels_like,
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
+      tempMax: response.data.main.temp_max,
+      tempMin: response.data.main.temp_min,
+      description: response.data.weather[0].description,
+      icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+    });
   }
 
   function searchValue(event) {
@@ -19,7 +32,8 @@ export default function Search() {
   function updateValue(event) {
     setCity(event.target.value);
   }
-  return (
+
+  let form = (
     <form onSubmit={searchValue}>
       <input
         type="search"
@@ -29,4 +43,18 @@ export default function Search() {
       <input type="submit" value="Search" />
     </form>
   );
+
+  if (loaded) {
+    return (
+      <div>
+        {form}
+        <div className="row">
+          <div className="col-8"></div>
+          <div className="col-4"></div>
+        </div>
+      </div>
+    );
+  } else {
+    return form;
+  }
 }
