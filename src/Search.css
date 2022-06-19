@@ -1,7 +1,7 @@
 .city-details {
-  font-size: 25px;
+  font-size: 32px;
   font-weight: 500;
-  line-height: 20px;
+  line-height: 28px;
   text-align: right;
   position: relative;
   top: 15px;
@@ -14,8 +14,8 @@
 .form-btn,
 .form-btn:hover {
   padding: 10px 20px;
-  background-color: #118a7e;
-  border-color: #118a7e;
+  background-color: #377793;
+  border-color: #377793;
   color: #fff;
 }
 

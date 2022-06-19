@@ -4,4 +4,14 @@
 }
 .card {
   text-align: center;
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img {
+  border: 1px solid transparent;
+  max-width: 650px;
+}
+body {
+  color: #fff;
 }
