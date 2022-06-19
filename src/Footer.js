@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer className="footer">
       <a
-        href="https://https://github.com/jieunchung/react_weathermellifluous-cajeta-05ad88.netlify.app/"
+        href="https://github.com/jieunchung/react_weather"
         target="_blank"
-        rel="noopener noreferer"
+        rel="noreferrer"
       >
         Open-source code
       </a>
