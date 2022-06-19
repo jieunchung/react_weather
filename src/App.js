@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Search from "./Search";
+import Footer from "./Footer";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
           <Search />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
