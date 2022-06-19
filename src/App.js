@@ -1,14 +1,14 @@
 import React from "react";
-import "./App.css";
 import Search from "./Search";
 import Footer from "./Footer";
+import "./App.css";
 
 export default function App() {
   return (
     <div className="container">
       <div className="card">
         <div className="card-body">
-          <Search />
+          <Search defaultCity="Los Angeles" />
         </div>
       </div>
       <Footer />

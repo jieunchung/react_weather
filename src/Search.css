@@ -1,12 +1,3 @@
-.city-details {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 28px;
-  text-align: right;
-  position: relative;
-  top: 15px;
-}
-
 .form-input {
   padding: 10px 20px;
 }
@@ -17,46 +8,4 @@
   background-color: #377793;
   border-color: #377793;
   color: #fff;
-}
-
-.icon {
-  display: inline-block;
-}
-
-.main-description {
-  font-size: 13px;
-  text-align: right;
-  text-transform: capitalize;
-  line-height: 18px;
-}
-
-.main-temp {
-  font-size: 55px;
-  font-weight: 700;
-  margin-left: 5px;
-  text-align: left;
-}
-
-.main-details {
-  font-size: 13px;
-  text-align: left;
-  line-height: 15px;
-}
-
-.row {
-  margin: 40px auto;
-}
-
-.unit {
-  position: relative;
-  top: -25px;
-  left: -8px;
-}
-
-ul {
-  display: inline-block;
-}
-
-li {
-  list-style: none;
 }
