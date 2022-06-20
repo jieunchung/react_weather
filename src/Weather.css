@@ -36,11 +36,11 @@
 }
 
 .main-details {
+  display: inline-block;
   font-size: 13px;
   text-align: left;
   line-height: 15px;
-  position: relative;
-  left: -25px;
+  font-weight: 500;
 }
 
 .row {

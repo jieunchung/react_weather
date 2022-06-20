@@ -2,23 +2,23 @@ import React from "react";
 import Icon from "./Icon";
 import "./Weather.css";
 import Date from "./Date";
+import Temperature from "./Temperature";
 
 export default function Weather(props) {
   return (
     <div className="row">
       <div className="col-6">
-        <span className="icon">
+        <span className="icon float-left">
           <Icon icon={props.data.icon} />
         </span>
-        <span className="main-temp">{Math.round(props.data.temp)}</span>
-        <span className="unit"> °C</span>
-
-        <ul className="main-details">
-          <li>Humidity: {props.data.humidity}%</li>
-          <li>Wind: {props.data.wind}m/s</li>
-          <li>Realfeel: {Math.round(props.data.feelsLike)}°C</li>
-        </ul>
+        <Temperature temp={props.data.temp} />
+        <div className="main-details">
+          <div>Humidity: {props.data.humidity}%</div>
+          <div>Wind: {props.data.wind}m/s</div>
+          <div>Realfeel: {Math.round(props.data.feelsLike)}°C</div>
+        </div>
       </div>
+
       <div className="col-6 city-details">
         {props.data.name}
         <div className="main-time">
