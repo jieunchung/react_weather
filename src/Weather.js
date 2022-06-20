@@ -8,7 +8,7 @@ export default function Weather(props) {
     <div className="row">
       <div className="col-6">
         <span className="icon">
-          <Icon />
+          <Icon icon={props.data.icon} />
         </span>
         <span className="main-temp">{Math.round(props.data.temp)}</span>
         <span className="unit"> °C</span>

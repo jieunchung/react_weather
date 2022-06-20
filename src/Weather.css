@@ -9,6 +9,8 @@
 
 .icon {
   display: inline-block;
+  position: relative;
+  bottom: -4px;
 }
 
 .main-description {
@@ -48,7 +50,7 @@
 .unit {
   position: relative;
   top: -25px;
-  left: -8px;
+  left: -4px;
 }
 
 ul {
