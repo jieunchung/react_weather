@@ -11,12 +11,12 @@ export default function Weather(props) {
         <span className="icon float-left">
           <Icon icon={props.data.icon} />
         </span>
-        <Temperature temp={props.data.temp} />
-        <div className="main-details">
-          <div>Humidity: {props.data.humidity}%</div>
-          <div>Wind: {props.data.wind}m/s</div>
-          <div>Realfeel: {Math.round(props.data.feelsLike)}°C</div>
-        </div>
+        <Temperature
+          temp={props.data.temp}
+          humidity={props.data.humidity}
+          wind={props.data.wind}
+          feel={props.data.feelsLike}
+        />
       </div>
 
       <div className="col-6 city-details">

@@ -4,6 +4,7 @@ import "./Temperature.css";
 export default function Temperature(props) {
   const [unit, setUnit] = useState("celsius");
   let fahrenheitTemp = (props.temp * 9) / 5 + 32;
+  let fahrenheitFeel = (props.feel * 9) / 5 + 32;
 
   function showFahrenheit(event) {
     event.preventDefault();
@@ -22,7 +23,12 @@ export default function Temperature(props) {
         <span className="unit celsius active"> °C </span>
         <a href="/" className="fahrenheit" onClick={showFahrenheit}>
           °F
-        </a>{" "}
+        </a>
+        <div className="main-details">
+          <div>Humidity: {props.humidity}%</div>
+          <div>Wind: {props.wind}m/s</div>
+          <div>Realfeel: {Math.round(props.feel)}°C</div>
+        </div>
       </span>
     );
   } else {
@@ -33,7 +39,12 @@ export default function Temperature(props) {
           {" "}
           °C{" "}
         </a>
-        <span className="fahrenheit active">°F</span>{" "}
+        <span className="fahrenheit active">°F</span>
+        <div className="main-details">
+          <div>Humidity: {props.humidity}%</div>
+          <div>Wind: {props.wind}m/s</div>
+          <div>Realfeel: {Math.round(fahrenheitFeel)}°F</div>
+        </div>
       </span>
     );
   }
