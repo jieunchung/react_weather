@@ -4,7 +4,7 @@
   line-height: 28px;
   text-align: right;
   position: relative;
-  top: 15px;
+  top: 22px;
 }
 
 .icon {
@@ -15,7 +15,7 @@
   font-size: 13px;
   text-align: right;
   text-transform: capitalize;
-  line-height: 18px;
+  line-height: 15px;
 }
 
 .main-time {
@@ -23,7 +23,7 @@
   text-align: right;
   text-transform: capitalize;
   line-height: 18px;
-  padding-top: 8px;
+  padding-top: 5px;
 }
 
 .main-temp {
@@ -37,6 +37,8 @@
   font-size: 13px;
   text-align: left;
   line-height: 15px;
+  position: relative;
+  left: -25px;
 }
 
 .row {
