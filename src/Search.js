@@ -15,9 +15,8 @@ export default function Search(props) {
       feelsLike: response.data.main.feels_like,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
-      tempMax: response.data.main.temp_max,
-      tempMin: response.data.main.temp_min,
       description: response.data.weather[0].description,
+      date: new Date(response.data.dt * 1000),
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
