@@ -18,6 +18,14 @@
   line-height: 18px;
 }
 
+.main-time {
+  font-size: 13px;
+  text-align: right;
+  text-transform: capitalize;
+  line-height: 18px;
+  padding-top: 8px;
+}
+
 .main-temp {
   font-size: 55px;
   font-weight: 700;

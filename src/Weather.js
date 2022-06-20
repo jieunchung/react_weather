@@ -20,6 +20,7 @@ export default function Weather(props) {
       </div>
       <div className="col-6 city-details">
         {props.data.name}
+        <div className="main-time">Monday 06/20 17:00</div>
         <div className="main-description">{props.data.description}</div>
       </div>
     </div>
