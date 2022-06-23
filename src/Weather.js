@@ -9,7 +9,7 @@ export default function Weather(props) {
     <div className="row">
       <div className="col-6">
         <span className="icon float-left">
-          <Icon icon={props.data.icon} />
+          <Icon icon={props.data.icon} size={50} />
         </span>
         <Temperature
           temp={props.data.temp}
