@@ -42,19 +42,12 @@ export default function Search(props) {
     <form className="form-inline" onSubmit={handleSubmit}>
       <div className="form-group mx-sm-3 mb-2">
         <div className="row">
-          <div className="col-8">
+          <div className="col-12">
             <input
               className="form-control form-input"
               type="search"
-              placeholder="Enter a city..."
+              placeholder="Search here"
               onChange={updateValue}
-            />
-          </div>
-          <div className="col-4">
-            <input
-              className="btn mx-sm-3 w-100 form-btn"
-              type="submit"
-              value="Search"
             />
           </div>
         </div>

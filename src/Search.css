@@ -5,7 +5,7 @@
 .form-btn,
 .form-btn:hover {
   padding: 10px 20px;
-  background-color: #377793;
-  border-color: #377793;
+  background-color: transparent;
+  border-color: transparent;
   color: #fff;
 }
