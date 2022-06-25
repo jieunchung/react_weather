@@ -1,21 +1,3 @@
-.fahrenheit,
-.fahrenheit:hover {
-  display: inline-block;
-  position: relative;
-  bottom: 5px;
-  right: 25px;
+.celsius {
   color: #fff;
-}
-
-.celsius,
-.celsius:hover {
-  color: #fff;
-}
-
-.active {
-  font-weight: 900;
-}
-
-a {
-  text-decoration: none;
 }
